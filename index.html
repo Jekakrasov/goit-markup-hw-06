@@ -22,6 +22,16 @@
   </head>
 
   <body>
+    <!-- hiden -->
+    <div class="backdrop" data-modal>
+      <div class="modal">
+        <button type="button" class="backdrop-btn" data-modal-close>
+          <use>
+            <svg hreh="./images/sprite.svg#icon-close"></svg>
+          </use>
+        </button>
+      </div>
+    </div>
     <!-- top line -->
     <header class="header">
       <div class="container page-header">
@@ -63,7 +73,9 @@
         <div class="container hearo-container">
           <h1 class="hearo-title">Effective Solutions for Your Business</h1>
           <div class="button-container">
-            <button type="button" class="hearo-btn">Order Service</button>
+            <button type="button" class="hearo-btn" data-modal-open>
+              Order Service
+            </button>
           </div>
         </div>
       </section>
@@ -432,5 +444,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
